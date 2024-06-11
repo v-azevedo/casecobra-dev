@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Casecobra Webpage
 
-## Getting Started
+[Preview]([https://](https://vercel.com/vazevedos-projects/casecobra-dev/JBbeQDRU4ZzNa6QAGmPc1XggApJ8))
 
-First, run the development server:
+## Application made with Next.JS using the programming language TypeScript
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This application was made to satisfy the needs of a fictitious company that sells customs phone cases and the main selling point is the ability to allow the customer to configurate his own case, by selecting his own picture, desired case color, material and  finish.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The database used is based on PostgresSQL on a cloud DB [Neon Tech]([https://](https://neon.tech/)) and has authentication by using the service [Kinde]([https://](https://kinde.com/)).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Uses the following packages
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [HeadlessUI]([https://](https://headlessui.com/))
+- [Kinde]([https://](https://kinde.com/))
+- [Prisma](https://www.prisma.io/)
+- [Lucide](https://lucide.dev/)
+- [Shadcn/ui](https://ui.shadcn.com/)
+- [Framer](https://www.framer.com/motion/)
+- [Clsx](https://www.npmjs.com/package/clsx)
+- [Tailwind](https://tailwindcss.com/)
+- [Uploadthing](https://uploadthing.com/)
+- [Zod](https://zod.dev/)
+- [Sharp](https://www.npmjs.com/package/sharp)
 
-## Learn More
+Design for the webpage shared by the content creator [Josh tried coding](twitter.com/joshtriedcoding).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+*This webpage was developed solely for educational purposes and it is not in any case used as a commercial product.*
