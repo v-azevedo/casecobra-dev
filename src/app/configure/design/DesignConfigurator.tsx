@@ -61,18 +61,18 @@ export const DesignConfigurator = ({
       });
     },
     onSuccess: () => {
-      router.push(`/configure/preview?=id${configId}`);
+      router.push(`/configure/preview?id=${configId}`);
     },
   });
 
   const [options, setOptions] = useState<{
     color: (typeof COLORS)[number];
-    model: (typeof MODELS)[0]["options"][number];
+    model: (typeof MODELS)["options"][number];
     material: (typeof MATERIALS)["options"][number];
     finish: (typeof FINISHES)["options"][number];
   }>({
     color: COLORS[0],
-    model: MODELS[0].options[0],
+    model: MODELS.options[0],
     material: MATERIALS.options[0],
     finish: FINISHES.options[0],
   });
@@ -278,7 +278,7 @@ export const DesignConfigurator = ({
                       </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
-                      {MODELS[0].options.map((model) => (
+                      {MODELS.options.map((model) => (
                         <DropdownMenuItem
                           key={model.label}
                           className={cn(
