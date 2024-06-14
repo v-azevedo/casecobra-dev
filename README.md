@@ -22,6 +22,6 @@ The database used is based on PostgresSQL on a cloud DB [Neon Tech](https://neon
 - [Zod](https://zod.dev/)
 - [Sharp](https://www.npmjs.com/package/sharp)
 
-Design for the webpage shared by the content creator [Josh tried coding](twitter.com/joshtriedcoding).
+Design for the webpage shared by the content creator [Josh tried coding](https://twitter.com/joshtriedcoding).
 
 *This webpage was developed solely for educational purposes and it is not in any case used as a commercial product.*
