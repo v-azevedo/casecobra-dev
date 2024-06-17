@@ -40,7 +40,7 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
     totalPrice += PRODUCTS_PRICES.materials.polycarbonate;
   if (finish === "textured") totalPrice += PRODUCTS_PRICES.finish.textured;
 
-  const { mutate: createPaymentSession } = useMutation({
+  const { mutate: createPaymentSession, isPending } = useMutation({
     mutationKey: ["get-checkout-session"],
     mutationFn: createCheckoutSession,
     onSuccess: ({ url }) => {
@@ -155,6 +155,9 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
               <Button
                 onClick={() => handleCheckout()}
                 className="px-4 sm:px-6 lg:px-8"
+                isLoading={isPending}
+                disabled={isPending}
+                loadingText="Redirecting"
               >
                 Checkout <ArrowRight className="h-4 w-4 ml-1.5 inline" />
               </Button>
