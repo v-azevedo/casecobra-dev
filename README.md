@@ -1,6 +1,6 @@
 # Casecobra Webpage
 
-[Preview](https://casecobra-lrfb3sdxs-vazevedos-projects.vercel.app/)
+[Preview](https://casecobra-dev-tawny.vercel.app/)
 
 ## Application made with Next.JS using the programming language TypeScript
 
