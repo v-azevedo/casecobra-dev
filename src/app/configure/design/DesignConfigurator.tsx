@@ -90,7 +90,7 @@ export const DesignConfigurator = ({
   const phoneCaseRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const { startUpload } = useUploadThing("imageUploader");
+  const { startUpload, isUploading } = useUploadThing("imageUploader");
 
   async function saveConfiguration() {
     try {
@@ -390,6 +390,9 @@ export const DesignConfigurator = ({
                     model: options.model.value,
                   });
                 }}
+                isLoading={isUploading}
+                disabled={isUploading}
+                loadingText="Processing"
                 size="sm"
                 className="w-full"
               >
