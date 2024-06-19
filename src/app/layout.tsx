@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Recursive } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
@@ -6,6 +5,7 @@ import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import Providers from "@/components/Providers";
 import { constructMetadata } from "@/lib/utils";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const recursive = Recursive({ subsets: ["latin"] });
 
@@ -22,6 +22,7 @@ export default function RootLayout({
         <NavBar />
         <main className="flex flex-col min-h-[calc(100vh-3.5rem-1px)]">
           <div className="flex-1 flex flex-col h-full">
+            <SpeedInsights />
             <Providers>{children}</Providers>
           </div>
           <Footer />
